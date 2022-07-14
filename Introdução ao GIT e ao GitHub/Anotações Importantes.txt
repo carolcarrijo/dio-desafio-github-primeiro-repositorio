@@ -1,0 +1,77 @@
+Introdução ao Git e GitHub
+
+	#Comandos básicos
+.cd - change directory
+.dir - list 
+.cls - clear screen
+.mkdir - make directory
+.cd .. - volta um nível na pasta
+."tab" - auto completar
+."ctrl + L" - clear screen (Linux)
+
+- Se não houver mensagem de erro, significa que deu tudo certo.
+
+	#Deletar arquivo x Deletar Repositório 
+.del "nome da pasta" - deleta todos os arquivos da pasta
+.rmdir "nome da pasta" - remove directory
+
+
+	#SHA1 
+.Conjunto de caracteres de 40 digitos que se torna a chave única de um arquivo/estado do arquivo.Sempre que há alguma edição dentro de determinado arquivo, é gerado um novo SHA1. Se você voltar a edição para o inicial, ele volta com a primeira chave criada. 
+
+	#Blobs
+. São metadados dos arquivos.
+.Traz o tipo, tamanho, "\0" e o conteúdo. Tem o SHA1 do arquivo.
+
+	#Tree
+. São onde as Blobs ficam guardadas. Também possui um SHA1 específico. 
+
+	#Commit
+. Aponta para uma árvore, um parente, autor, mensagem e timestamp.
+.É o objeto que carrega as informações sobre as alterações. 
+
+	#Sistema distribuído e seguro
+.A última versão disponível no git, é sempre a mesma versão acessada em qualquer máquina pelos mantainers. É impossível que alguém faça uma alteração no código sem que fique registrado a alteração, autor, etc. 
+
+	#Chaves SSH 
+.Forma de estabelecer conexão segura entre dois servidores. 
+GitHub > Settings > SSH and GPG Keys
+_Primeiro gera a chave comandos no GitBash (chave ed25519): ssh-keygen -t ed25519 -c "e-mail"
+Vai gerar a chave que será passada para o GitHub(navegador)
+_Segundo cat id_ed25519.pub
+(APARECE AQUI A CHAVE SSH PARA PASSAR PRO NAVEGADOR)
+_Terceiro - passar pro GitBash a chave privada com o código: eval $(ssh-agent -s)
+ssh-add id_"tab"
+
+	#Clonar arquivos para o computador
+Para clonar o código para o pc, sempre pegar o caminho SSH no GitHub
+no GitBash - git clone "chave SSH" 
+Vai perguntar se quer incluir fingerprint, colocar sim
+
+
+	# Tokens de acesso
+GitHub> Settings > Developer Settings > Personal Access Tokens
+Cria um novo Token > marca "repo"
+
+	#Todo comando no Git, se inicia com "Git"
+
+#Sempre que vai iniciar uma pasta, ou um novo código, dar "git init", assim o git já faz sua pasta de repositório no arquivo a ser trabalhado criando a pasta ".git" que é oculta
+
+Depois que tiver o arquivo na pasta, abre o git bash, "git add *"
+
+"git commit -m "commit xxxx""
+
+"git status" 
+
+"echo >" arquivo cria alguma coisa, coloca titulo e extenção
+
+"git push origin master" - 
+
+Cria repositório no git Hub
+Cria pasta e arquivos na máquina. 
+Add o link do repositório remoto na máquina "git remot add origin "https://..."
+"git branch -M main" 
+Confere no Git o push
+
+
+
