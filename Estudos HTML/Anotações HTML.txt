@@ -1,0 +1,12 @@
+Semântica
+	<section>
+	<header>
+	<article>
+	<aside>
+	<footer>
+	<h1>-<h6> (rega de só poder ter 1 h1 por página)
+	<p> Conteúdo de artigo </p> (representa um parágrafo, mas suporta diversos tipos de conteúdos)
+	<a> LINK </a> 
+	<img>
+	<img src="img/avatar.jpg">
+	<img alt="Foto de Carol Carrijo">
