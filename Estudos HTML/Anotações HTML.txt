@@ -10,3 +10,24 @@ Semântica
 	<img>
 	<img src="img/avatar.jpg">
 	<img alt="Foto de Carol Carrijo">
+
+Listas
+	<ul> (lista em que a ordem dos itens não é importante)
+	<ol> (a ordem é importante, representado por números letras ou algarismos romanos)
+	<li> (é um dos itens em ol)
+
+CSS3 
+Você cria regras de estilo para elementos ou grupos de elementos. 
+
+ID X CLASSE
+no CSS id é um "." e classe é uma "#".
+um ID só pode ser usado uma vez na página. 
+
+Box model
+Conceito do navegador representar cada elemento como uma caixa retangular, chamado box model.
+Com o CSS conseguimos alterar a aparência da caixa.
+margin - margem  - espaçamentos entre elementos
+border - bordas - circundam o padding e o conteúdo e nós conseguimos alterar os espaçamentos delas
+padding - espaçamento entre borda e conteúdo
+content - conteúdo é o que o bloco representa, pode ser uma imagem, texto ou vídeo.
+
